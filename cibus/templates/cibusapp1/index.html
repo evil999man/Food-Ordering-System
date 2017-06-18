@@ -1,0 +1,117 @@
+{% load staticfiles %}
+{% load static %}
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<style>
+  /*body {
+    background: white url("{% static "food.jpg" %}") no-repeat ;
+}*/
+/*html { 
+  background: url("{% static "food.jpg" %}") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+#bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    
+    padding: 10px;
+}
+.jumbotron h1{
+ color: red;
+ font-family: "Lobster" !important;
+ font-size: 48px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
+
+}
+.other-color{
+    background: #FFDB6B
+  }
+h1 {
+  font-style: arial;
+  color: white;
+}
+.well{
+background-color: #ffd700;
+padding: 0;
+}
+p{
+  font-size: 1em;
+}
+
+#menu > li{
+  float:right;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px; 
+}
+
+#menu {
+  padding-right: 50px;
+}
+
+#topbar{
+  padding: 0;
+}
+</style>
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Is anyone getting tired of repeatedly entering the header over and over?? -->
+       
+ <div id="topbar">
+        <div class="well">
+          <div class="row">
+          <ul id="menu">
+              <!-- <li style="font-color:#ffd700;">Someshittytextforplaceholder</li> -->
+              <li><a href="/cibusapp1/clogin/"><p>Customer Login</p></a></li>
+              <li><a href="/cibusapp1/cregister/"><p>Customer Register</p></a></li>
+              <li> <a href="/cibusapp1/rlogin/"><p>Restaurant Login</p></a></li>
+              <li><a href="/cibusapp1/rregister/"><p>Restaurant Register</p></a></li>
+          </ul>
+          </div>
+         </div>
+         </div>
+
+
+   <div class="jumbotron other-color" container-fluid>
+   <div class="container" style="height: 60px;" >
+     <h1 >Cibus</h1>
+     </div>
+   
+  </div>
+
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  
+    </head>
+
+    <body <body id="bg" style="background-image: url('{% static "food.jpg"%}')";> >
+      
+       
+        
+        
+        
+       
+        
+
+    </body>
+</html>
+
